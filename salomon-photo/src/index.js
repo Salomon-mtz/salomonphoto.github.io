@@ -2,6 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import { ReactComponent as Logo } from './logo.svg'
 import App from './App';
 import Menu from "./Menu";
 import Contact from './Contact';
@@ -11,8 +12,6 @@ import Footer from "./Footer";
 import 'animate.css';
 import reportWebVitals from './reportWebVitals';
 import 'jquery/dist/jquery.min.js';
-import Popper from '@popperjs/core';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -24,7 +23,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <div>
-      <div className='header text-center'>Salomon Photo</div>
+      <div className='header text-center'><Logo/></div>
       <Menu />
       <div className='social text-center'>
         <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"}><i class="bi bi-instagram me-4" style={{color: "#828282"}}></i></a>

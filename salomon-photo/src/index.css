@@ -1,9 +1,27 @@
-a.nav-link.active{
+li.nav-item a.nav-link{
   font-size: 20px;
+  margin-right: 40px;
+  margin-left: 40px;
+  color: rgb(130, 130, 130);
 }
 
-div.header{
-  font-size: 35px;
+a.nav-link:hover{
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
+.nav-link-active{
+  background-color: whitesmoke;
+  font-weight: 500
+}
+
+svg#Capa_1{
+  max-width: 400px;
+}
+
+div.header.text-center{
+  max-height: 100px;
+  margin-bottom: 25px;
 }
 
 i.bi.bi-instagram{
@@ -15,5 +33,13 @@ i.bi.bi-tiktok{
 }
 
 div.social.text-center{
+  margin-bottom: 35px;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse.justify-content-center{
   margin-bottom: 20px;
+}
+
+footer{
+  margin-bottom: 0px;
 }
