@@ -7,6 +7,8 @@ import Menu from "./Menu";
 import Contact from './Contact';
 import Gallery from './Gallery';
 import About from './About';
+import Footer from "./Footer";
+import 'animate.css';
 import reportWebVitals from './reportWebVitals';
 import 'jquery/dist/jquery.min.js';
 import Popper from '@popperjs/core';
@@ -14,22 +16,29 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Link } from "react-router-dom";
 import { Routes, Route} from "react-router-dom";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <div>
+      <div className='header text-center'>Salomon Photo</div>
       <Menu />
+      <div className='social text-center'>
+        <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"}><i class="bi bi-instagram me-4" style={{color: "#828282"}}></i></a>
+        <a className='ig' href='https://www.tiktok.com/@salomon_photo' target={"_blank"}><i class="bi bi-tiktok " style={{color: "#828282"}}></i></a>
+      </div>
       <div>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/galería" element={<Gallery />} />
-        <Route path="/nosotros" element={<About />} />
-        <Route path="/contacto" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       </div>
+      <Footer/>
     </div>
     </BrowserRouter>,
   </React.StrictMode>,
