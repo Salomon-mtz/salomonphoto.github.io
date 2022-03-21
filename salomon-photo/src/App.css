@@ -1,3 +1,7 @@
+.font-link{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
 div.container{
     margin-bottom: 30px;
 }
@@ -9,3 +13,32 @@ img.profile{
 p.about-me{
     text-align: justify;
 }
+
+div.item{
+    padding: 0px 10px 10px 10px;
+}
+
+div.heading{
+    color: rgb(104, 104, 104);
+}
+
+label.contact{
+    font-weight: 300;
+    color: rgb(130, 130, 130);
+}
+
+.transition{
+    animation: transitionIn 1.5s;
+  }
+  
+  @keyframes transitionIn{
+    from{
+      opacity: 0;
+      transform: rotateX(-10deg);
+    }
+  
+    to{
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }

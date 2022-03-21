@@ -3,27 +3,29 @@ import React from 'react';
 
 function App() {
   return (
-    <div className="container">
+    <div className="transtion container">
       <div class="row d-flex">
-        <div class="col-lg-4 col-md-12 mb-3">
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(58).jpg" class="img-fluid mb-4" alt=""/>
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(66).jpg" class="img-fluid mb-4" alt=""
-            data-wow-delay="0.3s"/>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(74).jpg" class="img-fluid mb-4" alt=""
-            data-wow-delay="0.1s"/>
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(64).jpg" class="img-fluid mb-4" alt=""
-            data-wow-delay="0.4s"/>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-3">
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(77).jpg" class="img-fluid mb-4" alt=""
-            data-wow-delay="0.2s"/>
 
-          <img src="http://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(67).jpg" class="img-fluid mb-4" alt=""
-            data-wow-delay="0.5s"/>
+        <div class="col-lg-4 col-md-12 mb-3">
+          <img src={require('./Images/1.JPG')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/4.jpg')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/9.jpg')} class="img-fluid mb-4" alt=""/>
+          
         </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <img src={require('./Images/2.jpg')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/5.jpg')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/3.JPG')} class="img-fluid mb-4" alt=""/>
         </div>
+
+        <div class="col-lg-4 col-md-6 mb-3">
+          <img src={require('./Images/6.jpg')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/8.jpg')} class="img-fluid mb-4" alt=""/>
+          <img src={require('./Images/7.JPG')} class="img-fluid mb-4" alt=""/>
+        </div>
+
+      </div>
     </div>
   );
 }

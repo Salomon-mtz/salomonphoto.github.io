@@ -3,32 +3,38 @@ import React from 'react';
 
 function Gallery() {
   return (
-    <div className='container'>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
-        <ol class="carousel-indicators">
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-          <img class="d-block w-100" src="https://via.placeholder.com/150x50" alt="First slide"/>
-          </div>
-          <div class="carousel-item">
-          <img class="d-block w-100" src="https://via.placeholder.com/150x50" alt="Second slide"/>
-          </div>
-          <div class="carousel-item">
-          <img class="d-block w-100" src="https://via.placeholder.com/150x50" alt="Third slide"/>
-          </div>
+    <div className='transtion container'>
+      <div className="heading text-center mb-4">
+        <h2 className='font-link'>Grand Prix Formula E Mexico City</h2>
+      </div>
+      <div className="row">
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/1.jpg')}/>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only"></span>
-        </a>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/2.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/3.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/4.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/5.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/6.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/7.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/8.jpg')}/>
+        </div>
+        <div className="col-md-6 col-lg-4 item">
+          <img className="img-fluid image scale-on-hover" src={require('./Gallery Fe/9.jpg')}/>
+        </div>
       </div>
     </div>
 

@@ -1,28 +1,39 @@
-import { Link } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import React from 'react';
+import { Link, useResolvedPath, useMatch } from 'react-router-dom';
 
+function CustomLink({ children, to, ...props }) {
+  let resolved = useResolvedPath(to);
+  let match = useMatch({ path: resolved.pathname, end: true });
+
+  return (
+      <Link
+        className={`nav-link ${match ? "active" : ""}`}
+        to={to}
+        {...props}
+      >
+        {children}
+      </Link>
+  );
+}
 function Menu(){
   return (
     <nav className="navbar navbar-expand-lg navbar  bg text-center">
-      <Link className="navbar-brand" to="/">
-      </Link>
-      <button className="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#salomon-menu" aria-controls="salomon-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <div className="collapse navbar-collapse justify-content-center" id="salomon-menu">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="nav-link-active" aria-current="page" to="/">Home</NavLink>
+            <CustomLink to="/">Home</CustomLink>
           </li>
           <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="nav-link-active" aria-current="page" to="/gallery">Gallery</NavLink>
+            <CustomLink to="/gallery">Gallery</CustomLink>
           </li>
           <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="nav-link-active" aria-current="page" to="/about">About</NavLink>
+            <CustomLink to="/about">About</CustomLink>
           </li>
           <li className="nav-item">
-            <NavLink exact className="nav-link" activeClassName="nav-link-active" aria-current="page" to="/contact">Contact</NavLink>
+            <CustomLink to="/contact">Contact</CustomLink>
           </li>
         </ul>
       </div>

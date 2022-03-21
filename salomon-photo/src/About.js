@@ -3,7 +3,7 @@ import React from 'react';
 
 function About() {
   return (
-    <div className='container text-center'>
+    <div className='transtion container text-center'>
       <img src='https://via.placeholder.com/1300x300' className='profile img-fluid' alt='profile-photo'/>
       <p className='about-me'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus tellus, 

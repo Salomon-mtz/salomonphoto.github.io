@@ -3,8 +3,8 @@ import React from 'react';
 
 function Footer(){
   return (
-    <footer>
-      <p className='copy text-center' style={{color: "#828282"}}>Copyrights 2022</p>
+    <footer >
+      <p className='copy text-center font-link' style={{color: "#828282"}}>Copyrights 2022 by Salomón Martínez</p>
     </footer>
 
   );
