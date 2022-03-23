@@ -12,6 +12,8 @@ img.profile{
 
 p.about-me{
     text-align: justify;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 div.item{
@@ -20,6 +22,10 @@ div.item{
 
 div.heading{
     color: rgb(104, 104, 104);
+}
+
+h2.name{
+  color: rgb(104, 104, 104);
 }
 
 label.contact{
@@ -45,4 +51,12 @@ label.contact{
 
   div#gallery1.row.d-flex{
     margin-bottom: 50px;
+  }
+
+  img.aboutme{
+    max-width: 60%;
+  }
+
+  div#story.col{
+    margin-top: 35px;
   }

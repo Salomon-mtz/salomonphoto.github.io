@@ -4,6 +4,9 @@ import React from 'react';
 function Contact() {
   return (
 <div className="transtion container text-center">
+    <div className='heading mb-4 font-link'>
+      <h2>Contact me</h2>
+    </div>
     <div className="row justify-content-md-center">
     <form className="col-lg-9" id="contacto">
       <div className="form-row d-flex">

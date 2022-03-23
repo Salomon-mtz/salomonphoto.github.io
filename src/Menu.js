@@ -18,7 +18,7 @@ function CustomLink({ children, to, ...props }) {
 function Menu(){
   return (
     <nav className="navbar navbar-expand-lg navbar  bg text-center">
-      <button className="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#salomon-menu" aria-controls="salomon-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <button className="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#salomon-menu" aria-controls="salomon-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse justify-content-center" id="salomon-menu">

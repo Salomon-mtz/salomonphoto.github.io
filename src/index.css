@@ -53,3 +53,10 @@ footer{
   margin-bottom: 0px;
 }
 
+nav.navbar.navbar-expand-lg.bg.text-center{
+  justify-content: endl;
+}
+
+button.navbar-toggler.navbar-light.bg-light.collapsed{
+  margin-right: 25px;
+}
