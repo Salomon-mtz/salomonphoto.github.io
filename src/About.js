@@ -4,7 +4,7 @@ import React from 'react';
 function About() {
   return (
     <div className='transtion container text-center'>
-      <img src='https://via.placeholder.com/1300x300' className='profile img-fluid' alt='profile-photo'/>
+      <img src='https://via.placeholder.com/1300x300' className='profile img-fluid' alt='profile'/>
       <p className='about-me'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tellus tellus, 
         pharetra nec maximus ut, mollis sed massa. Quisque in mauris bibendum, condimentum 

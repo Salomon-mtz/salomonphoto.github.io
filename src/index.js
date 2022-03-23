@@ -15,7 +15,7 @@ import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { BrowserRouter, Link } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Routes, Route} from "react-router-dom";
 
 
@@ -26,8 +26,8 @@ ReactDOM.render(
       <div className='header text-center'><Logo/></div>
       <Menu />
       <div className='social text-center'>
-        <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"}><i class="bi bi-instagram" style={{color: "#828282"}}></i></a>
-        <a className='ig' href='https://www.tiktok.com/@salomon_photo' target={"_blank"}><i class="bi bi-tiktok " style={{color: "#828282"}}></i></a>
+        <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"} rel="noreferrer"><i class="bi bi-instagram" style={{color: "#828282"}}></i></a>
+        <a className='ig' href='https://www.tiktok.com/@salomon_photo' target={"_blank"} rel="noreferrer"><i class="bi bi-tiktok " style={{color: "#828282"}}></i></a>
       </div>
       <div>
       <Routes>
