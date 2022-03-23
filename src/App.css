@@ -42,3 +42,7 @@ label.contact{
       transform: rotateX(0);
     }
   }
+
+  div#gallery1.row.d-flex{
+    margin-bottom: 50px;
+  }
