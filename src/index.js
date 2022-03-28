@@ -23,7 +23,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <div>
-      <div className='header text-center'><Logo/></div>
+      <div className='header text-center'><Logo className='img-fluid'/></div>
       <Menu />
       <div className='social text-center'>
         <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"} rel="noreferrer"><i class="bi bi-instagram" style={{color: "#828282"}}></i></a>
