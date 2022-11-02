@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { ReactComponent as Logo } from './logo.svg'
+import logo from './logo.png';
 import App from './App';
 import Menu from "./Menu";
 import Contact from './Contact';
@@ -23,7 +23,7 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
     <div>
-      <div className='header text-center'><Logo className='img-fluid'/></div>
+      <div className='header text-center'><img src={logo} className='img-fluid' style={{maxWidth: "170px", marginTop:"50px"}}/></div>
       <Menu />
       <div className='social text-center'>
         <a className='ig' href='https://www.instagram.com/salomon__photo/' target={"_blank"} rel="noreferrer"><i class="bi bi-instagram" style={{color: "#828282"}}></i></a>

@@ -17,7 +17,7 @@ function CustomLink({ children, to, ...props }) {
 }
 function Menu(){
   return (
-    <nav className="navbar navbar-expand-lg navbar  bg text-center">
+    <nav className="navbar navbar-expand-lg navbar  bg text-center" style={{marginTop:"60px"}}>
       <button className="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#salomon-menu" aria-controls="salomon-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
